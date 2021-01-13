@@ -5,8 +5,8 @@ version: 1.1.13
 appVersion: "0.36.0"
 keywords:
 - bi
-home: https://github.com/apache/incubator-superset
+home: https://github.com/raziel130889/superset
 icon: https://superset.incubator.apache.org/_images/s.png
 sources:
-- https://github.com/apache/incubator-superset
+- https://github.com/raziel130889/superset
 deprecated: true
