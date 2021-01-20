@@ -105,3 +105,15 @@ The [superset image](https://hub.docker.com/r/amancevice/superset/) mounts the S
 ```bash
 $ helm install --set persistence.enabled=true,persistence.existingClaim=superset-pvc stable/superset
 ```
+### Update Helm 
+1.- Get the name instance helm
+`helm list`
+
+2.- Modify the values.yaml file with the new values, use this commad to update values
+`helm upgrade -f superset/values.yaml superset-1611101296 ./superset`
+
+3.- Get pods created in GCP to remove them using
+`kubectl get pods`
+
+4.- Delete the pods created that contain the name super_id
+`kubectl delete pod supert_id`

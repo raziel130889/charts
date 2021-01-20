@@ -5,9 +5,9 @@ replicaCount: 1
 
 ## Set default image, imageTag, and imagePullPolicy.
 image:
-  repository: "amancevice/superset"
-  tag: "0.36.0"
-  pullPolicy: "IfNotPresent"
+  repository: raziel1308/custom-superset
+  tag: latest
+  pullPolicy: "Always"
   pullSecrets: []
 
 initFile: |-
@@ -124,8 +124,8 @@ persistence:
 ## ref: http://kubernetes.io/docs/user-guide/services/
 ##
 service:
-  type: ClusterIP
-  port: 9000
+  type: LoadBalancer
+  port: 80
 
   ## service annotations
   annotations: {}
